@@ -6,8 +6,14 @@ public class findTheNthPrime {
 
 	public static void main(String[] args) {
 		
+		long start = System.nanoTime();
+		
 		System.out.println(findPrime(10001));
+		
+		System.out.println((System.nanoTime() - start) / 1000000 + " ms");
+		return;
 	}
+	
 	
 	public static int findPrime(int number){
 		

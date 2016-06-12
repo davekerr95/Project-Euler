@@ -12,12 +12,18 @@ public class evenFibonacciNumbers {
 	
 	public static void main(String[] args) {
 		
+		long start = System.nanoTime();
+		
 		int sum = 0;
 		for(int i = 0; i < 34; i++)
 			if(findFibonacci(i) % 2 == 0)
 				sum += findFibonacci(i);
 		
 		System.out.println(sum);
+		
+		System.out.println((System.nanoTime() - start) / 1000000 + " ms");
+		return;
+		
 	}
 	
 	public static int findFibonacci(int num){
